@@ -84,6 +84,7 @@ production:
     <<: *default
     database: laptop_production
     username: laptop
+    url: <%= ENV['DATABASE_URL'] %>
     password: <%= ENV["LAPTOP_DATABASE_PASSWORD"] %>
   cache:
     <<: *primary_production
